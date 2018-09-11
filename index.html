@@ -37,6 +37,18 @@
     Author: BootstrapMade.com
     License: https://bootstrapmade.com/license/
   ======================================================= -->
+<!-- Map Data -->
+  <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 150px;  /* The height is 400 pixels */
+        width: 100%;  /* The width is the width of the web page */
+       }
+    </style>
+
+
+
+
 </head>
 
 <body>
@@ -146,6 +158,12 @@
         });
       }
     </script>
+<script
+        type="text/javascript"
+        async defer
+        src="//assets.pinterest.com/js/pinit.js"
+></script>
+
   <!--==========================
     Header
   ============================-->
@@ -305,8 +323,17 @@
           </div>
 
         </div>
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-53fde338-dace-4058-86cc-2fa5552bd663"></div>
+        <a class="twitter-timeline" data-width="1200" data-height="350" data-theme="light" data-link-color="#19CF86" href="https://twitter.com/iamCJonline?ref_src=twsrc%5Etfw">Tweets by iamCJonline</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div class="about-col">
+          <center> <a  data-pin-do="embedUser" data-pin-board-width="900" data-pin-scale-height="100" data-pin-scale-width="80" href="https://www.pinterest.com/iamcjonline"></a> </center>
+
+
 
       </div>
+
+
     </section><!-- #about -->
 <!--==========================
       Skills Section
@@ -653,7 +680,7 @@
         </div>
 
       </div>
-    </section><!-- #portfolio -->
+    </section><!-- end of #portfolio -->
 
     
     <section id="contact" class="section-bg wow fadeInUp">
@@ -663,6 +690,31 @@
           <h3>Contact</h3>
           <p>Contact me to get an obligation free quote or visit </p>
         </div>
+<!-- Map Start -->
+        <div id="map"></div>
+        <script>
+// Initialize and add the map
+function initMap() {
+  // The location of Wellington
+  var uluru = {lat: 41.2865, lng: 174.7762};
+  // The map, centered at Wellington
+  var map = new google.maps.Map(
+      document.getElementById('map'), {zoom: 4, center: wellington});
+  // The marker, positioned at Wellington
+  var marker = new google.maps.Marker({position: wellington, map: map});
+}
+    </script>
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3-0LGriTWn4xLpuRRf8EmgchIZwEnmX0&callback=initMap">
+        </script>
+
+
+<!-- Map end -->
 
         <div class="row contact-info">
 
@@ -693,33 +745,10 @@
         </div>
 
         <div class="form">
-          <div id="sendmessage">Your message has been sent. Thank you!</div>
-          <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
-            <div class="form-row">
-              <div class="form-group col-md-6">
-                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                <div class="validation"></div>
-              </div>
-              <div class="form-group col-md-6">
-                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                <div class="validation"></div>
-              </div>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-              <div class="validation"></div>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-              <div class="validation"></div>
-            </div>
-            <div class="text-center"><button type="submit">Send Message</button></div>
-          </form>
-        </div>
 
-      </div>
-    </section><!-- #contact -->
+          <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+          <div class="elfsight-app-cc430c2c-e474-46dc-a193-dba1c7381951"></div>
+          <!-- #contact -->
 
   </main>
 
@@ -748,20 +777,10 @@
           </div>
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h4>Contact Me</h4>
+            <h4>Fan Page</h4>
             <p>
-              Wellington<br>
-              New Zealand <br>
-              <strong>Phone:</strong> +64 22 0220022<br>
-              <strong>Email:</strong> ercj86@gmail.com <br>
+              <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpencilarts.co.nz%2F&tabs&width=220&height=240&small_header=true&adapt_container_width=true&hide_cover=true&show_facepile=true&appId=237659780286207" width="220" height="240" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
             </p>
-
-            <div class="social-links">
-              <a href="https://www.youtube.com/user/iamCJonline" target = blank class="youyube"><i class="fa fa-youtube"></i></a>
-              <a href="https://www.facebook.com/pencilarts.co.nz" target = blank class="facebook"><i class="fa fa-facebook"></i></a>
-              <a href="https://plus.google.com/u/0/+CharithJayapathi" target = blank class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="https://www.linkedin.com/in/charithjayapathi" target = blank class="linkedin"><i class="fa fa-linkedin"></i></a>
-            </div>
 
           </div>
 
@@ -771,6 +790,15 @@
             <form action="" method="post">
               <input type="email" name="email"><input type="submit"  value="Subscribe">
             </form>
+            <p></p>
+            <div class="social-links">
+              <a href="https://www.youtube.com/user/iamCJonline" target = blank class="youyube"><i class="fa fa-youtube"></i></a>
+              <a href="https://www.facebook.com/pencilarts.co.nz" target = blank class="facebook"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/iamCJonline" target = blank class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://plus.google.com/u/0/+CharithJayapathi" target = blank class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <!-- <a href="https://www.linkedin.com/in/charithjayapathi" target = blank class="linkedin"><i class="fa fa-linkedin"></i></a> -->
+              <a href="https://www.pinterest.nz/iamCJonline/" target = blank class="pinterest"><i class="fa fa-pinterest"></i></a>
+            </div>
           </div>
 
         </div>
